@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="flex flex-col min-h-screen bg-background bg-gradient-to-t from-[#8EE2FF] via-[#ffffff] to-white">
       <Header />
-      <main>{children}</main>
+      <main className="flex-grow">{children}</main>
       <footer className="bg-[#003138] text-white text-center py-4 mt-12">
         <p>&copy; 2025 PT Mangatur Dharma</p>
       </footer>

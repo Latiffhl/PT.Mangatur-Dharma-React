@@ -3,26 +3,84 @@ import Layout from '@/components/Layout';
 const JejakLangkah = () => {
   return (
     <Layout>
-      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-20">
+      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-12 md:py-20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-bold z-50"> Jejak & Langkah</h1>
+            <h1 className="text-3xl md:text-5xl font-bold z-50">Jejak & Langkah</h1>
           </div>
         </div>
         <div className="absolute inset-0">
           <img src="\assets\img\item\bg-1.png" alt="Modern office building" className="w-full h-full object-cover opacity-90" />
         </div>
         <div className="absolute bottom-0 right-12 mr-10 transform translate-x-1/4 translate-y-1/4">
-          <img src="\assets\img\item\icon-3.png" alt="About Us" className="w-48 h-48 object-contain" />
+          <img src="\assets\img\item\icon-3.png" alt="About Us" className="w-24 h-24 md:w-46 md:h-46 object-contain" />
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6 md:py-12">
+        {/* Gambar Roadmap */}
         <div className="bg-white rounded-lg shadow-[var(--shadow-card)] overflow-hidden relative">
           <img src="public\assets\img\item\jejak-langkah.png" alt="Company Roadmap Timeline" className="w-full h-auto object-cover" />
-          <div className="absolute bottom-0 right-0 p-8 text-right bg-white bg-opacity-70 rounded-tl-lg">
-            <h2 className="text-3xl font-bold text-primary mb-2">Roadmap</h2>
-            <h3 className="text-2xl font-bold text-gray-600">Timeline Process</h3>
+          <div className="absolute bottom-0 right-0 p-4 md:p-8 text-right bg-white bg-opacity-70 rounded-tl-lg">
+            <h2 className="text-xl md:text-3xl font-bold text-primary mb-1 md:mb-2">Roadmap</h2>
+            <h3 className="text-lg md:text-2xl font-bold text-gray-600">Timeline Process</h3>
+          </div>
+        </div>
+
+        {/* Bagian Kartu Timeline */}
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Card: 1976 - Established */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">1976</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Established</h4>
+              <p className="text-gray-600 mt-1">Berdirinya perusahaan</p>
+            </div>
+          </div>
+
+          {/* Card: 1984 - Start to Sales */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">1984</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Start to Sales</h4>
+              <p className="text-gray-600 mt-1">Memulai penjualan GTS Donaldson Filters (Import)</p>
+            </div>
+          </div>
+
+          {/* Card: 1988 - Joint with ADR */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">1988</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Joint With ADR</h4>
+              <p className="text-gray-600 mt-1">Bergabung dengan ADR Groups of Company</p>
+            </div>
+          </div>
+
+          {/* Card: 2000 - Support from Donaldson */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">2000</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Support from</h4>
+              <p className="text-gray-600 mt-1">Dukungan dari Donaldson Filtration Indonesia untuk pasokan filter</p>
+            </div>
+          </div>
+
+          {/* Card: 2004 - Sole Agent PT Panata */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">2004</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Sole Agent PT</h4>
+              <p className="text-gray-600 mt-1">Menjadi Sole Agent PT Panata Jaya Mandiri untuk GTS & Filter</p>
+            </div>
+          </div>
+
+          {/* Card: 2021 - Sole Agent PT Selamat Sempurna */}
+          <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+            <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">2021</div>
+            <div>
+              <h4 className="text-xl font-semibold text-gray-800">Sole Agent PT</h4>
+              <p className="text-gray-600 mt-1">Menjadi Sole Agent PT Selamat Sempurna untuk GTS, HVAC & Filter</p>
+            </div>
           </div>
         </div>
       </div>

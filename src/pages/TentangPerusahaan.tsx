@@ -12,7 +12,7 @@ const TentangPerusahaan = () => {
         <div className="absolute inset-0">
           <img src="\assets\img\item\bg-1.png" alt="Modern office building" className="w-full h-full object-cover opacity-90" />
         </div>
-        <div className="absolute bottom-0 right-12 transform translate-x-1/4 translate-y-1/4">
+        <div className="absolute bottom-0 right-12 mr-10 transform translate-x-1/4 translate-y-1/4">
           <img src="\assets\img\item\icon-1.png" alt="About Us" className="w-48 h-48 object-contain" />
         </div>
       </div>

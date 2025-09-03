@@ -5,10 +5,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // untuk carousel
-import heroImage1 from '../assets/hero-products.jpg';
-import heroImage2 from '../assets/hero-products.jpg';
-import heroImage3 from '../assets/hero-products.jpg';
-import heroImage4 from '../assets/hero-products.jpg';
+import heroImage1 from '../assets/md1.png';
+import heroImage2 from '../assets/md2.png';
+import heroImage3 from '../assets/md3.png';
 
 const settings = {
   dots: true,
@@ -21,20 +20,20 @@ const settings = {
 };
 
 const Index = () => {
-  const carouselImages = [heroImage1, heroImage2, heroImage3, heroImage4];
+  const carouselImages = [heroImage1, heroImage2, heroImage3];
 
   return (
     <Layout>
       {/* Hero Sliders */}
-      <section className="relative bg-gradient-to-r from-white to-white text-white py-0 overflow-hidden">
-        <div className="container mx-auto px-0">
+      <section className="relative bg-gradient-to-r from-white to-white text-white py-0 px-0 overflow-hidden">
+        <div>
           <div>
             {' '}
             <div className="relative">
               <Slider {...settings}>
                 {carouselImages.map((image, index) => (
                   <div key={index}>
-                    <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full h-auto rounded-lg shadow-2xl object-cover" style={{ maxHeight: '400px' }} />
+                    <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full h-auto  shadow-2xl object-cover" style={{ maxHeight: '500px' }} />
                   </div>
                 ))}
               </Slider>

@@ -57,13 +57,13 @@ const Index = () => {
       </section>
 
       {/* Industry Categories */}
-      <section className="py-16 bg-secondary/20">
+      <section className=" py-10 bg-background bg-gradient-to-t from-[#8EE2FF] via-[#ffffff] to-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Automotive */}
             <div className="text-center bg-white p-6 rounded-lg shadow-[var(--shadow-card)] hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/assets/img/item/Automotive.png" alt="Automotive Icon" className="w-8 h-8 text-primary" />
+                <img src="/assets/img/item/Automotive.png" alt="Automotive Icon" className="w-10 h-10 text-primary" />
               </div>
               <h3 className="font-semibold text-primary mb-2">Automotive</h3>
               <p className="text-sm text-gray-600">Fuel Filter, Air Filter, Oil Filter</p>

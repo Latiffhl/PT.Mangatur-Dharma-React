@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="h-screen bg-background bg-gradient-to-b from-[#8EE2FF] via-[#ffffff] to-white">
+    <div className="flex flex-col min-h-screen bg-background bg-gradient-to-t from-[#8EE2FF] via-[#ffffff] to-white">
       <Header />
       <main>{children}</main>
       <footer className="bg-[#003138] text-white text-center py-4 mt-12">

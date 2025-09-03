@@ -67,13 +67,13 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8" onMouseLeave={handleMouseLeave}>
-          <Link to="/" className="text-primary hover:text-primary/80 font-medium">
+          <Link to="/" className="text-[#003138] hover:text-[#003138]/80 font-medium">
             Home
           </Link>
 
           {/* Profil Dropdown */}
           <div className="relative">
-            <button onClick={() => handleDropdownToggle('profil')} onMouseEnter={() => handleDropdownHover('profil')} className="flex items-center space-x-1 text-primary hover:text-primary/80 font-medium">
+            <button onClick={() => handleDropdownToggle('profil')} onMouseEnter={() => handleDropdownHover('profil')} className="flex items-center space-x-1 text-[#003138] hover:text-[#003138]/80 font-medium">
               <span>Profil</span>
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'profil' ? 'rotate-180' : ''}`} />
             </button>
@@ -94,7 +94,7 @@ const Header = () => {
 
           {/* Produk Dropdown */}
           <div className="relative">
-            <button onClick={() => handleDropdownToggle('produk')} onMouseEnter={() => handleDropdownHover('produk')} className="flex items-center space-x-1 text-primary hover:text-primary/80 font-medium">
+            <button onClick={() => handleDropdownToggle('produk')} onMouseEnter={() => handleDropdownHover('produk')} className="flex items-center space-x-1 text-[#003138] hover:text-[#003138]/80 font-medium">
               <span>Produk</span>
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'produk' ? 'rotate-180' : ''}`} />
             </button>
@@ -122,13 +122,13 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/our-category" className="text-primary hover:text-primary/80 font-medium">
+          <Link to="/our-category" className="text-[#003138] hover:text-[#003138]/80 font-medium">
             Our Category
           </Link>
 
           {/* Berita Dropdown */}
           <div className="relative">
-            <button onClick={() => handleDropdownToggle('berita')} onMouseEnter={() => handleDropdownHover('berita')} className="flex items-center space-x-1 text-primary hover:text-primary/80 font-medium">
+            <button onClick={() => handleDropdownToggle('berita')} onMouseEnter={() => handleDropdownHover('berita')} className="flex items-center space-x-1 text-[#003138] hover:text-[#003138]/80 font-medium">
               <span>Berita</span>
               <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'berita' ? 'rotate-180' : ''}`} />
             </button>
@@ -150,13 +150,13 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/kontak" className="text-primary hover:text-primary/80 font-medium">
+          <Link to="/kontak" className="text-[#003138] hover:text-[#003138]/80 font-medium">
             Kontak
           </Link>
         </nav>
 
         {/* Mobile menu button */}
-        <button onClick={toggleMobileMenu} className="md:hidden text-primary p-2 hover:bg-secondary/10 rounded-md transition-colors" aria-label="Toggle mobile menu">
+        <button onClick={toggleMobileMenu} className="md:hidden text-[#003138] hover:text-[#003138]/80 rounded-md transition-colors" aria-label="Toggle mobile menu">
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -165,19 +165,19 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <nav className="container mx-auto px-4 py-4 space-y-4">
-            <Link to="/" className="block text-primary hover:text-primary/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/" className="block text-[#003138] hover:text-[#003138]/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Home
             </Link>
 
             {/* Mobile Profil Dropdown */}
             <div>
-              <button onClick={() => handleDropdownToggle('profil-mobile')} className="flex items-center justify-between w-full text-primary hover:text-primary/80 font-medium py-2">
+              <button onClick={() => handleDropdownToggle('profil-mobile')} className="flex items-center justify-between w-full text-[#003138] hover:text-[#003138]/80 font-medium py-2">
                 <span>Profil</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'profil-mobile' ? 'rotate-180' : ''}`} />
               </button>
               {activeDropdown === 'profil-mobile' && (
                 <div className="ml-4 mt-2 space-y-2">
-                  <Link to="/tentang-perusahaan" className="block text-gray-600 hover:text-primary py-2" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link to="/tentang-perusahaan" className="block text-gray-600 hover:text-[#003138] py-2" onClick={() => setIsMobileMenuOpen(false)}>
                     Tentang Perusahaan
                   </Link>
                   <Link to="/jejak-langkah" className="block text-gray-600 hover:text-primary py-2" onClick={() => setIsMobileMenuOpen(false)}>
@@ -192,7 +192,7 @@ const Header = () => {
 
             {/* Mobile Produk Dropdown */}
             <div>
-              <button onClick={() => handleDropdownToggle('produk-mobile')} className="flex items-center justify-between w-full text-primary hover:text-primary/80 font-medium py-2">
+              <button onClick={() => handleDropdownToggle('produk-mobile')} className="flex items-center justify-between w-full text-[#003138] hover:text-[#003138]/80 font-medium py-2">
                 <span>Produk</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'produk-mobile' ? 'rotate-180' : ''}`} />
               </button>
@@ -220,13 +220,13 @@ const Header = () => {
               )}
             </div>
 
-            <Link to="/our-category" className="block text-primary hover:text-primary/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/our-category" className="block text-[#003138] hover:text-[#003138]/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Our Category
             </Link>
 
             {/* Mobile Berita Dropdown */}
             <div>
-              <button onClick={() => handleDropdownToggle('berita-mobile')} className="flex items-center justify-between w-full text-primary hover:text-primary/80 font-medium py-2">
+              <button onClick={() => handleDropdownToggle('berita-mobile')} className="flex items-center justify-between w-full text-[#003138] hover:text-[#003138]/80 font-medium py-2">
                 <span>Berita</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'berita-mobile' ? 'rotate-180' : ''}`} />
               </button>
@@ -247,8 +247,7 @@ const Header = () => {
                 </div>
               )}
             </div>
-
-            <Link to="/kontak" className="block text-primary hover:text-primary/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/kontak" className="block text-[#003138] hover:text-[#003138]/80 font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Kontak
             </Link>
           </nav>

@@ -29,7 +29,7 @@ const VisiMisi = () => {
           <div className="bg-white p-8 rounded-lg shadow-[var(--shadow-card)]">
             <h2 className="text-2xl font-bold text-primary mb-6">Misi</h2>
             <p className="text-lg leading-relaxed text-gray-700">
-              Menjadi perusahaan pertama yang menyediakan solusi untuk kebutuhan Industri (Power Plan, Oil & Gas, Otomotif, Mining, Marine, HVAC) dengan menyediakan Produk berkualitas, harga yg terjangkau serta area distribusi yang luas &
+              Menjadi perusahaan pertama yang menyediakan solusi untuk kebutuhan Industri (Power Plan, Oil & Gas, Otomotif, Mining, Marine, HVAC) dengan menyediakan Produk berkualitas, harga yang terjangkau serta area distribusi yang luas &
               terpercaya.
             </p>
           </div>

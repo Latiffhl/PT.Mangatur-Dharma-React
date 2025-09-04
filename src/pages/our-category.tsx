@@ -22,7 +22,7 @@ const OurCategory = () => {
         <div className="mt-12 grid md:grid-cols-4 gap-5">
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\category\ktgr1.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Automotive</h3>
             <p className="text-center mt-2">
@@ -32,7 +32,7 @@ const OurCategory = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\category\ktgr2.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Heavy Duty</h3>
             <p className="text-center mt-2">
@@ -42,7 +42,7 @@ const OurCategory = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\category\ktgr3.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Industrial</h3>
             <p className="text-center mt-2">
@@ -52,7 +52,7 @@ const OurCategory = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\category\ktgr4.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">HVAC</h3>
             <p className="text-center mt-2">

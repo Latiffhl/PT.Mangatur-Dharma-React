@@ -20,13 +20,13 @@ const VisiMisi = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Visi */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow ">
             <h2 className="text-2xl font-bold text-primary mb-6">Visi</h2>
             <p className="text-lg leading-relaxed text-gray-700">Menjadi perusahaan terbaik di Indonesia untuk pengadaan komponen industri dan alat berat lainnya</p>
           </div>
 
           {/* Misi */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <h2 className="text-2xl font-bold text-primary mb-6">Misi</h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Menjadi perusahaan pertama yang menyediakan solusi untuk kebutuhan Industri (Power Plan, Oil & Gas, Otomotif, Mining, Marine, HVAC) dengan menyediakan Produk berkualitas, harga yang terjangkau serta area distribusi yang luas &
@@ -36,7 +36,7 @@ const VisiMisi = () => {
         </div>
 
         {/* Nilai Inti */}
-        <div className="bg-white p-8 rounded-lg shadow-lg mt-8">
+        <div className="bg-white p-8 rounded-lg mt-8 shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
           <h2 className="text-2xl font-bold text-primary mb-6">Nilai Inti Perseroan</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">

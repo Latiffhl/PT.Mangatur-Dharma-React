@@ -20,7 +20,7 @@ const JejakLangkah = () => {
       <div className="container mx-auto px-4 py-6 md:py-12">
         {/* Gambar Roadmap */}
         <div className="bg-white  shadow-md overflow-hidden relative stroke-none">
-          <img src="public\assets\img\item\jejak-langkah.png" alt="Company Roadmap Timeline" className="w-full h-auto object-cover" />
+          <img src="\assets\img\item\jejak-langkah.png" alt="Company Roadmap Timeline" className="w-full h-auto object-cover" />
         </div>
 
         {/* Bagian Kartu Timeline */}

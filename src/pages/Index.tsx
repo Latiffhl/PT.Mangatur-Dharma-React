@@ -8,12 +8,6 @@ import heroImage1 from '../assets/md1.png';
 import heroImage2 from '../assets/md2.png';
 import heroImage3 from '../assets/md3.png';
 
-type PrevAarrow = {
-  className?: string;
-  style?: React.CSSProperties;
-  onClick?: () => void;
-};
-
 const PrevArrow = ({ onClick }) => (
   <div
     className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer 

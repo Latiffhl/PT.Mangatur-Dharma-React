@@ -20,7 +20,7 @@ const OurCategory = () => {
       <div className="container mx-auto px-4 py-15 ">
         {/* Category Section */}
         <div className="mt-12 grid md:grid-cols-4 gap-5">
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src=".\assets\img\item\category\ktgr1.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
@@ -30,7 +30,7 @@ const OurCategory = () => {
               similique.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src=".\assets\img\item\category\ktgr2.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
@@ -40,7 +40,7 @@ const OurCategory = () => {
               similique.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src=".\assets\img\item\category\ktgr3.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
@@ -50,7 +50,7 @@ const OurCategory = () => {
               similique.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src=".\assets\img\item\category\ktgr4.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>

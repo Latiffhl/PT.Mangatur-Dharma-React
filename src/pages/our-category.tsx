@@ -44,7 +44,7 @@ const OurCategory = () => {
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
             </div>
-            <h3 className="font-bold text-2xl text-center">Inustrial</h3>
+            <h3 className="font-bold text-2xl text-center">Industrial</h3>
             <p className="text-center mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem debitis velit sed architecto quisquam dolor molestiae voluptas doloribus
               similique.

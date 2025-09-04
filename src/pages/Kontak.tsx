@@ -21,7 +21,7 @@ const Kontak = () => {
         <div className="text-black text-3xl mt-5 font-bold ">Sales Person </div>
         <div className="grid md:grid-cols-3 gap-12 mt-5 ">
           {/* Syahrul Linardi */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang Marine dan Transportasi</h3>
@@ -32,7 +32,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Gusti Ngurah */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang Mining dan Power Plant</h3>
@@ -43,7 +43,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Andre Heriyanto */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang GTS, Oil & Gas</h3>
@@ -54,7 +54,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* David Edilka */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang HVAC</h3>
@@ -65,7 +65,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Contact Us */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <li className="flex items-center mb-2">
@@ -94,7 +94,7 @@ const Kontak = () => {
         <div className="text-black text-3xl mt-5 font-bold ">Alamat </div>
         <div className="grid md:grid-cols-2 gap-12 mt-5 ">
           {/* Sales Person */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">PT Mangatur Dharma - Jakarta</h3>
@@ -105,7 +105,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Sales Person */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">PT Mangatur Dharma – Tangerang</h3>
@@ -119,7 +119,7 @@ const Kontak = () => {
 
         {/* Maps Section */}
         <div className="mt-12 grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-[var(--shadow-card)]">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <h3 className="text-xl font-bold text-primary mb-4">MD Jakarta - Pusat</h3>
             <div className="h-64 rounded-lg overflow-hidden">
               <iframe
@@ -134,7 +134,7 @@ const Kontak = () => {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-[var(--shadow-card)]">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow]">
             <h3 className="text-xl font-bold text-primary mb-4">MD Tangerang</h3>
             <div className="h-64 rounded-lg overflow-hidden">
               <iframe

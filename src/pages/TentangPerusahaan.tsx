@@ -18,7 +18,7 @@ const TentangPerusahaan = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12 ">
-        <div className="bg-white p-8 rounded-lg drop-shadow-lg">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
               <strong>PT Mangatur Dharma</strong> (selanjutnya disebut Perseroan) berdiri tahun 1976 bermula dari perdagangan filter GTS (Gas Turbine System) dengan merek Donaldson,

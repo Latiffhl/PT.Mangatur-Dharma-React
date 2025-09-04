@@ -19,7 +19,7 @@ const OurCategory = () => {
 
       <div className="container mx-auto px-4 py-15 ">
         {/* Category Section */}
-        <div className="mt-12 grid md:grid-cols-4 gap-8">
+        <div className="mt-12 grid md:grid-cols-4 gap-5">
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
               <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />

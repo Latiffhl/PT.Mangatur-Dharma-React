@@ -34,77 +34,77 @@ const Penghargaan = () => {
         <div className="mt-12 grid md:grid-cols-3 gap-2">
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan1.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 1</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan2.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 2</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan3.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 3</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan4.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 4</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan5.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 5</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan6.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 6</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan7.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 7</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan8.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 8</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan9.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 9</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan10.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 10</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src="placeholder.svg" alt="" className="max-w-full max-h-full object-contain" />
+              <img src=".\assets\img\item\penghargaan11.png" alt="" className="max-w-full max-h-full object-contain" />
             </div>
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 11</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

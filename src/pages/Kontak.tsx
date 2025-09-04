@@ -6,7 +6,7 @@ const Kontak = () => {
       <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-bold z-50"> Tentang Perusahaan</h1>
+            <h1 className="text-3xl md:text-5xl font-bold z-50"> Tentang Perusahaan</h1>
           </div>
         </div>
         <div className="absolute inset-0">
@@ -19,9 +19,9 @@ const Kontak = () => {
 
       <div className="container mx-auto px-4 py-18 ">
         <div className="text-black text-3xl mt-5 font-bold ">Sales Person </div>
-        <div className="grid md:grid-cols-3 gap-12 ">
+        <div className="grid md:grid-cols-3 gap-12 mt-5 ">
           {/* Syahrul Linardi */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang Marine dan Transportasi</h3>
@@ -32,7 +32,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Gusti Ngurah */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang Mining dan Power Plant</h3>
@@ -43,7 +43,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Andre Heriyanto */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang GTS, Oil & Gas</h3>
@@ -54,7 +54,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* David Edilka */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">Bidang HVAC</h3>
@@ -65,7 +65,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Contact Us */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <li className="flex items-center mb-2">
@@ -94,7 +94,7 @@ const Kontak = () => {
         <div className="text-black text-3xl mt-5 font-bold ">Alamat </div>
         <div className="grid md:grid-cols-2 gap-12 mt-5 ">
           {/* Sales Person */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">PT Mangatur Dharma - Jakarta</h3>
@@ -105,7 +105,7 @@ const Kontak = () => {
             </div>
           </div>
           {/* Sales Person */}
-          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow">
+          <div className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-400">
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-gray-800">PT Mangatur Dharma – Tangerang</h3>

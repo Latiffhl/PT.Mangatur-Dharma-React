@@ -19,12 +19,8 @@ const JejakLangkah = () => {
 
       <div className="container mx-auto px-4 py-6 md:py-12">
         {/* Gambar Roadmap */}
-        <div className="bg-white rounded-lg shadow-[var(--shadow-card)] overflow-hidden relative">
+        <div className="bg-white  shadow-md overflow-hidden relative stroke-none">
           <img src="public\assets\img\item\jejak-langkah.png" alt="Company Roadmap Timeline" className="w-full h-auto object-cover" />
-          <div className="absolute bottom-0 right-0 p-4 md:p-8 text-right bg-white bg-opacity-70 rounded-tl-lg">
-            <h2 className="text-xl md:text-3xl font-bold text-primary mb-1 md:mb-2">Roadmap</h2>
-            <h3 className="text-lg md:text-2xl font-bold text-gray-600">Timeline Process</h3>
-          </div>
         </div>
 
         {/* Bagian Kartu Timeline */}

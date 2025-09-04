@@ -6,7 +6,7 @@ const TentangPerusahaan = () => {
       <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-bold z-50"> Tentang Perusahaan</h1>
+            <h1 className="text-3xl md:text-5xl font-bold z-50"> Tentang Perusahaan</h1>
           </div>
         </div>
         <div className="absolute inset-0">
@@ -17,8 +17,8 @@ const TentangPerusahaan = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
-        <div className="bg-white p-8 rounded-lg shadow-[var(--shadow-card)]">
+      <div className="container mx-auto px-4 py-12 ">
+        <div className="bg-white p-8 rounded-lg drop-shadow-lg">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
               <strong>PT Mangatur Dharma</strong> (selanjutnya disebut Perseroan) berdiri tahun 1976 bermula dari perdagangan filter GTS (Gas Turbine System) dengan merek Donaldson,

@@ -13,6 +13,7 @@ import Penghargaan from './pages/news/Penghargaan';
 import Aktifitas from './pages/news/Aktifitas';
 import Artikel from './pages/news/Artikel';
 import DaftarPelanggan from './pages/news/DaftarPelanggan';
+import OurCategory from './pages/our-category';
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/jejak-langkah" element={<JejakLangkah />} />
           <Route path="/visi-misi" element={<VisiMisi />} />
           <Route path="/kontak" element={<Kontak />} />
+          <Route path="/our-category" element={<OurCategory />} />
           <Route path="/penghargaan" element={<Penghargaan />} />
           <Route path="/aktifitas" element={<Aktifitas />} />
           <Route path="/artikel" element={<Artikel />} />

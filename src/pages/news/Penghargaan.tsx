@@ -8,7 +8,7 @@ import fotoDua from '../../assets/penghargaan6.png';
 import fotoTiga from '../../assets/penghargaan32.png';
 import fotoEmpat from '../../assets/penghargaan62.png';
 
-// Komponen panah navigasi, bisa Anda gunakan ulang
+// Komponen panah navigasi
 const PrevArrow = ({ onClick }) => (
   <div
     className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer 
@@ -46,11 +46,47 @@ const settings = {
   autoplaySpeed: 3000,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
+  // Pengaturan responsif untuk berbagai ukuran layar
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const Penghargaan = () => {
   const carouselImages1 = [fotoSatu, fotoTiga];
   const carouselImages2 = [fotoDua, fotoEmpat];
+
+  // Fungsi untuk render kartu
+  const renderAwardCard = (awardNumber, imageUrl) => (
+    <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+      <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
+        <img src={imageUrl} alt={`Penghargaan ${awardNumber}`} className="max-w-full max-h-full object-contain" />
+      </div>
+      <h3 className="font-bold text-2xl text-center">Detail Penghargaan {awardNumber}</h3>
+      <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  );
+
   return (
     <Layout>
       <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-20">
@@ -60,47 +96,35 @@ const Penghargaan = () => {
           </div>
         </div>
         <div className="absolute inset-0">
-          <img src="\assets\img\item\bg-1.png" alt="Modern office building" className="w-full h-full object-cover opacity-90" />
+          <img src="/assets/img/item/bg-1.png" alt="Modern office building" className="w-full h-full object-cover opacity-90" />
         </div>
         <div className="absolute bottom-0 right-12 mr-10 transform translate-x-1/4 translate-y-1/4">
-          <img src="\assets\img\item\icon-6.png" alt="About Us" className="w-48 h-48 object-contain" />
+          <img src="/assets/img/item/icon-6.png" alt="About Us" className="w-48 h-48 object-contain" />
         </div>
       </div>
 
-      <div className="bg-white p-8 my-7  shadow-[var(--shadow-card)]">
+      <div className="bg-white p-8 my-7 shadow-[var(--shadow-card)]">
         <div className="flex items-center">
           <div className="bg-primary h-12 w-1 mr-4"></div>
-
           <h2 className="text-2xl font-bold text-gray-800">Semua Penghargaan</h2>
-
           <div className="flex-grow border-t-4 border-gray-700 ml-4"></div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-15 ">
-        {/* Category Section */}
-        <div className="mt-12 grid md:grid-cols-3 gap-2">
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan1.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 1</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan2.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 2</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {/* Kartu Penghargaan Tunggal */}
+          {renderAwardCard(1, '/assets/img/item/penghargaan1.png')}
+          {renderAwardCard(2, '/assets/img/item/penghargaan2.png')}
+
+          {/* Kartu Carousel 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Slider {...settings}>
                 {carouselImages1.map((image, index) => (
                   <div key={index}>
                     <div className="flex justify-center items-center h-64 w-full">
-                      <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full object-contain" />
+                      <img src={image} alt={`Penghargaan 3, Gambar ${index + 1}`} className="w-full object-contain" />
                     </div>
                   </div>
                 ))}
@@ -109,27 +133,19 @@ const Penghargaan = () => {
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 3</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan4.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 4</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan5.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 5</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+
+          {/* Kartu Penghargaan Tunggal */}
+          {renderAwardCard(4, '/assets/img/item/penghargaan4.png')}
+          {renderAwardCard(5, '/assets/img/item/penghargaan5.png')}
+
+          {/* Kartu Carousel 2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Slider {...settings}>
                 {carouselImages2.map((image, index) => (
                   <div key={index}>
                     <div className="flex justify-center items-center h-64 w-full">
-                      <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full object-contain" />
+                      <img src={image} alt={`Penghargaan 6, Gambar ${index + 1}`} className="w-full object-contain" />
                     </div>
                   </div>
                 ))}
@@ -138,41 +154,13 @@ const Penghargaan = () => {
             <h3 className="font-bold text-2xl text-center">Detail Penghargaan 6</h3>
             <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan7.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 7</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan8.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 8</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan9.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 9</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan10.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 10</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
-            <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
-              <img src=".\assets\img\item\penghargaan11.png" alt="" className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="font-bold text-2xl text-center">Detail Penghargaan 11</h3>
-            <p className="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto esse ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+
+          {/* Kartu Penghargaan Tunggal */}
+          {renderAwardCard(7, '/assets/img/item/penghargaan7.png')}
+          {renderAwardCard(8, '/assets/img/item/penghargaan8.png')}
+          {renderAwardCard(9, '/assets/img/item/penghargaan9.png')}
+          {renderAwardCard(10, '/assets/img/item/penghargaan10.png')}
+          {renderAwardCard(11, '/assets/img/item/penghargaan11.png')}
         </div>
       </div>
     </Layout>

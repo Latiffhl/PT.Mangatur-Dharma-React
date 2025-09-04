@@ -80,11 +80,11 @@ const Index = () => {
       </section>
 
       {/* Industry Categories */}
-      <section className=" py-10 bg-background bg-gradient-to-t from-[#8EE2FF] via-[#ffffff] to-white">
+      <section className="  bg-background bg-gradient-to-t from-[#83e9ff] via-[#ffffff] to-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Automotive */}
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src="/assets/img/item/Automotive.png" alt="Automotive Icon" className="w-10 h-10 text-primary" />
               </div>
@@ -93,7 +93,7 @@ const Index = () => {
             </div>
 
             {/* Heavy Duty */}
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src="/assets/img/item/HeavyDuty.png" alt="Heavy Duty Icon" className="w-8 h-8 text-primary" />
               </div>
@@ -102,7 +102,7 @@ const Index = () => {
             </div>
 
             {/* Industrial */}
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src="/assets/img/item/Industrial.png" alt="Industrial Icon" className="w-8 h-8 text-primary" />
               </div>
@@ -111,7 +111,7 @@ const Index = () => {
             </div>
 
             {/* HVAC */}
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src="/assets/img/item/HVAC.png" alt="HVAC Icon" className="w-8 h-8 text-primary" />
               </div>

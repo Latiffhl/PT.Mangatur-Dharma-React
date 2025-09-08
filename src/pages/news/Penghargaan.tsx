@@ -78,7 +78,7 @@ const Penghargaan = () => {
 
   // Fungsi untuk render kartu
   const renderAwardCard = (awardNumber, imageUrl) => (
-    <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+    <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
       <div className="h-64 rounded-lg overflow-hidden flex justify-center items-center">
         <img src={imageUrl} alt={`Penghargaan ${awardNumber}`} className="max-w-full max-h-full object-contain" />
       </div>
@@ -118,7 +118,7 @@ const Penghargaan = () => {
           {renderAwardCard(2, '/assets/img/item/penghargaan2.png')}
 
           {/* Kartu Carousel 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Slider {...settings}>
                 {carouselImages1.map((image, index) => (
@@ -139,7 +139,7 @@ const Penghargaan = () => {
           {renderAwardCard(5, '/assets/img/item/penghargaan5.png')}
 
           {/* Kartu Carousel 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Slider {...settings}>
                 {carouselImages2.map((image, index) => (

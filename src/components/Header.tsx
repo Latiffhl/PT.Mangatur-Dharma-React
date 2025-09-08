@@ -58,7 +58,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header ref={headerRef} className="bg-gradient-to-l from-[#8EE2FF] via-[#C0FFFE] to-white shadow-sm relative z-50 sticky top-0">
+    <header ref={headerRef} className="bg-gradient-to-l from-[#8EE2FF] via-[#C0FFFE] to-white shadow-sm z-50 sticky top-0">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">

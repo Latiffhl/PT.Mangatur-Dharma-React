@@ -7,6 +7,7 @@ import fotoSatu from '../../assets/penghargaan3.png';
 import fotoDua from '../../assets/penghargaan6.png';
 import fotoTiga from '../../assets/penghargaan32.png';
 import fotoEmpat from '../../assets/penghargaan62.png';
+import { PrevArrow, NextArrow } from '@/components/CustomArrows';
 
 // Komponen panah navigasi
 const PrevArrow = ({ onClick }) => (
@@ -46,7 +47,7 @@ const settings = {
   autoplaySpeed: 3000,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
-  // Pengaturan responsif untuk berbagai ukuran layar
+
   responsive: [
     {
       breakpoint: 1024,

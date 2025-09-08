@@ -18,9 +18,9 @@ const Aktifitas = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-12 mt-0">
+      {/* <div className="container mx-auto px-4 py-6 md:py-12 mt-0">
         <div className="flex flex-col md:flex-row items-center gap-4 bg-white p-6 rounded-xl shadow-lg">
-          {/* Input Pencarian */}
+          
           <div className="flex items-center border border-gray-300 rounded-lg px-4 py-2 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -28,7 +28,7 @@ const Aktifitas = () => {
             <input type="text" placeholder="Cari berita..." className="focus:outline-none flex-grow" />
           </div>
 
-          {/* Dropdown Kategori */}
+        
           <div className="relative w-full md:w-auto">
             <select className="appearance-none border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none">
               <option>Category</option>
@@ -42,7 +42,7 @@ const Aktifitas = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

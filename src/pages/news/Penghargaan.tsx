@@ -113,7 +113,7 @@ const Penghargaan = () => {
       </div>
 
       <div className="container mx-auto px-4 py-15 ">
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {/* Kartu Penghargaan Tunggal */}
           {renderAwardCard(1, '/assets/img/item/penghargaan1.png')}
           {renderAwardCard(2, '/assets/img/item/penghargaan2.png')}

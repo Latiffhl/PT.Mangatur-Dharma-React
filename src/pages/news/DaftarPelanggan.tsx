@@ -38,12 +38,7 @@ const DaftarPelanggan = () => {
   };
 
   // Buat array logo
-  const logoList1 = Array.from({ length: 40 }, (_, i) => ({
-    id: i + 1,
-    src: `/assets/img/pelanggan/logo-${(i % 10) + 1}.png`,
-    alt: `Logo ${i + 1}`,
-  }));
-  const logoList2 = Array.from({ length: 40 }, (_, i) => ({
+  const logoList = Array.from({ length: 40 }, (_, i) => ({
     id: i + 1,
     src: `/assets/img/pelanggan/logo-${(i % 10) + 1}.png`,
     alt: `Logo ${i + 1}`,
@@ -67,12 +62,12 @@ const DaftarPelanggan = () => {
 
       {/* Bagian Carousel Logo */}
       <div className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-7">
           <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">Dalam Pengembangan</h2>
           <Slider {...settings}>
-            {logoList1.map((logo) => (
+            {logoList.map((logo) => (
               <div key={logo.id} className="p-4 flex items-center justify-center">
-                <img src={logo.src} alt={logo.alt} className="items-center justify-center max-h-24 w- opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                <img src={logo.src} alt={logo.alt} className="items-center justify-center max-h-24 opacity-60 hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
           </Slider>

@@ -73,15 +73,18 @@ const Test = () => {
   const sectionContent = [
     {
       title: 'Judul Bagian 1',
-      description: 'Deskripsi singkat untuk slide pertama. Konten ini berubah seiring pergeseran gambar.',
+      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: heroImage1, // Tambahkan properti ini
     },
     {
       title: 'Judul Bagian 2',
-      description: 'Ini adalah konten yang relevan dengan slide kedua. Informasi akan diperbarui secara dinamis.',
+      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: heroImage2, // Tambahkan properti ini
     },
     {
       title: 'Judul Bagian 3',
-      description: 'Teks untuk slide ketiga. Menampilkan detail baru saat gambar berubah.',
+      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: heroImage3, // Tambahkan properti ini
     },
   ];
 
@@ -89,11 +92,11 @@ const Test = () => {
     <Layout>
       {/* Hero Sliders */}
       <section className="relative bg-gradient-to-r from-white to-white text-white py-0 px-0 overflow-hidden">
-        <div className="relative ">
+        <div className="relative">
           <Slider {...settings}>
             {carouselImages.map((image, index) => (
               <div key={index}>
-                <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full h-auto shadow-2xl object-cover " style={{ maxHeight: '220px' }} />
+                <img src={image} alt={`Industrial filter product ${index + 1}`} className="w-full h-auto shadow-2xl object-cover" style={{ maxHeight: '220px' }} />
               </div>
             ))}
           </Slider>
@@ -103,7 +106,10 @@ const Test = () => {
       {/* Bagian konten yang berubah */}
       <section className="py-12 bg-gray-100 text-center">
         <div className="container mx-auto">
-          {/* Tampilkan konten berdasarkan indeks slide yang aktif */}
+          {/* Tampilkan gambar dari objek konten */}
+          <img src={sectionContent[currentSlide].image} alt={sectionContent[currentSlide].title} className="w-full max-w-xl mx-auto mb-8 rounded-lg shadow-lg" />
+
+          {/* Tampilkan judul dan deskripsi */}
           <h2 className="text-3xl font-bold mb-4">{sectionContent[currentSlide].title}</h2>
           <p className="text-lg text-gray-700">{sectionContent[currentSlide].description}</p>
         </div>

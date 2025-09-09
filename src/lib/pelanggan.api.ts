@@ -2,11 +2,11 @@
 import { fetchingApi } from './catalog-api';
 import { AppConfig } from './config';
 
-export async function getListAwards(apiDB: string): Promise<any[]> {
+export async function getListPelanggan(apiDB: string): Promise<any[]> {
   const objParams = {
     params: {
       Method: 'LoadGrid',
-      Controller: 'CMAWRH',
+      Controller: 'PELANGGAN',
       ApiDB: apiDB,
     },
   };
@@ -17,8 +17,7 @@ export async function getListAwards(apiDB: string): Promise<any[]> {
       return response.data.items;
     }
   } catch (error) {
-    console.error('Gagal mengambil data penghargaan:', error);
+    console.error('Gagal mengambil data pelanggan:', error);
     return [];
   }
-  return [];
 }

@@ -1,6 +1,6 @@
 import { fetchingApi } from './catalog-api';
 import { AppConfig } from './config';
-import { EventDataRow, ResponseEventData } from '@/types/events.types';
+import { EventDataRow, ResponseEventData } from '../types/events.types';
 
 export async function getListEvents(page = 1, limit = 8, category = ''): Promise<{ list: EventDataRow[]; totalRows: number }> {
   let sqlCondition = '';
@@ -24,7 +24,7 @@ export async function getListEvents(page = 1, limit = 8, category = ''): Promise
       ApiDB: AppConfig.apiDB,
     },
   };
-  const response = await fetchingApi(`${AppConfig.apiDB}/getData`, objParams);
+  const response = await fetchingApi(`${AppConfig.apiUrl}/getData`, objParams);
 
   if (response?.data?.items?.length > 0) {
     const datas: EventDataRow[] = response.data.items.map(

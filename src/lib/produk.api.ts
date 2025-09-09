@@ -2,23 +2,20 @@
 import { fetchingApi } from './catalog-api';
 import { AppConfig } from './config';
 
-export async function getListAwards(apiDB: string): Promise<any[]> {
+export async function getListProduk(): Promise<any[]> {
   const objParams = {
     params: {
       Method: 'LoadGrid',
-      Controller: 'CMAWRH',
+      Controller: 'CMPROD',
       ApiDB: apiDB,
     },
   };
 
   try {
     const response = await fetchingApi(`${AppConfig.apiUrl}/getData`, objParams);
-    if (response?.data?.items) {
-      return response.data.items;
-    }
+    return response?.data?.items || [];
   } catch (error) {
-    console.error('Gagal mengambil data penghargaan:', error);
+    console.error('Gagal mengambil data produk:', error);
     return [];
   }
-  return [];
 }

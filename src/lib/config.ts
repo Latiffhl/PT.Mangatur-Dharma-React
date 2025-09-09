@@ -1,7 +1,7 @@
 export const AppConfig = {
   apiUrl: 'http://localhost:8080/api',
-
-  apiKey: 'YOUR_API_KEY_HERE',
+  ApiDB: 'SYS005',
+  appKey: '',
 
   appVersion: '1.0.0',
 

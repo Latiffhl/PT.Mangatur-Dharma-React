@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { AppConfig } from './config';
-import { adrDec, adrEnc } from '../helpers/lib';
+import { adrDec, adrEnc } from './lib-helper';
 
 export const fetchingApi = async (
   url: string,

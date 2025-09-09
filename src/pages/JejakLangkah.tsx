@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 const JejakLangkah = () => {
   return (
     <Layout>
-      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-12 md:py-20">
+      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-10 md:py-18">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl md:text-5xl font-bold z-50">Jejak & Langkah</h1>
@@ -17,7 +17,7 @@ const JejakLangkah = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-12">
+      <div className="container mx-auto px-4 p-6 md:p-12">
         {/* Gambar Roadmap */}
         <div className="bg-white rounded-lg shadow-lg border border-gray-300 hover:shadow-xl transition-shadow overflow-hidden relative ">
           <img src="\assets\img\item\jejak-langkah.png" alt="Company Roadmap Timeline" className="w-full h-auto object-cover" />

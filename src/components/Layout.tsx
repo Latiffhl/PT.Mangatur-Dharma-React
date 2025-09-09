@@ -11,7 +11,9 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <main className="flex-grow">{children}</main>
       <footer className="bg-[#003138] text-white text-center py-4 mt-12 ">
-        <p>&copy; 2025 PT Mangatur Dharma</p>
+        <p>
+          &copy; 2025 <b>PT Mangatur Dharma</b>
+        </p>
       </footer>
     </div>
   );

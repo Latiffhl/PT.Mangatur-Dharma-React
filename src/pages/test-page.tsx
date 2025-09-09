@@ -103,10 +103,14 @@ const Test = () => {
         </div>
       </section>
 
-      {/* Bagian konten yang berubah */}
+      <div className="container mx-auto px-4 -mt-16 relative z-20">
+        <div className="flex flex-col md:flex-row items-center gap-4 bg-white p-6 rounded-xl shadow-lg">
+          <div className="relative w-full md:w-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt earum aut magnam.</div>
+        </div>
+      </div>
+
       <section className="py-12 bg-gray-100 text-center">
         <div className="container mx-auto">
-          {/* Tampilkan gambar dari objek konten */}
           <img src={sectionContent[currentSlide].image} alt={sectionContent[currentSlide].title} className="w-full max-w-xl mx-auto mb-8 rounded-lg shadow-lg" />
 
           {/* Tampilkan judul dan deskripsi */}

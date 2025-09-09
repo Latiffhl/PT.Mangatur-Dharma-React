@@ -46,7 +46,7 @@ const DaftarPelanggan = () => {
 
   return (
     <Layout>
-      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-12 md:py-20 flex items-center">
+      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-10 md:py-18 flex items-center">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl md:text-5xl font-bold z-50">Daftar Pelanggan</h1>
@@ -67,7 +67,7 @@ const DaftarPelanggan = () => {
           <Slider {...settings}>
             {logoList.map((logo) => (
               <div key={logo.id} className="p-4 flex items-center justify-center">
-                <img src={logo.src} alt={logo.alt} className="items-center justify-center max-h-24 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                <img src={logo.src} alt={logo.alt} className="items-center justify-center max-h-24 opacity-60 w hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
           </Slider>

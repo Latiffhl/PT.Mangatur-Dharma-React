@@ -90,7 +90,7 @@ const Penghargaan = () => {
 
   return (
     <Layout>
-      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-20">
+      <div className="relative bg-gradient-to-r from-primary to-primary/90 text-white py-10 md:py-18">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl md:text-5xl font-bold z-50"> Our Category</h1>

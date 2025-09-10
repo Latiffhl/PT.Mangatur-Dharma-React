@@ -6,16 +6,21 @@ export async function getListProduk(): Promise<any[]> {
   const objParams = {
     params: {
       Method: 'LoadGrid',
-      Controller: 'CMPROD',
-      ApiDB: apiDB,
+      Controller: 'CMAWRH',
+      ApiDB: AppConfig.apiDB,
     },
   };
 
   try {
-    const response = await fetchingApi(`${AppConfig.apiUrl}/getData`, objParams);
-    return response?.data?.items || [];
+    const response = await fetchingApi(`${AppConfig.apiUrl}/getDataCms`, objParams);
+    if (response?.data?.items) {
+      return response.data.items;
+    }
   } catch (error) {
-    console.error('Gagal mengambil data produk:', error);
+    console.error('Gagal mengambil data penghargaan:', error);
     return [];
   }
+  return [];
 }
+
+

@@ -111,6 +111,8 @@ const Penghargaan = () => {
 
 export default Penghargaan;
 
+
+//hardcode version
 // import Layout from '@/components/Layout';
 // import React from 'react';
 // import Slider from 'react-slick';

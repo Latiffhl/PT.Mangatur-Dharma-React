@@ -11,6 +11,8 @@ export const fetchingApi = async (
     headers?: Record<string, any>;
   } = {}
 ) => {
+  console.log(options,"Error")
+  console.log(AppConfig.apiDB,"apidb")
   const encParams = adrEnc(JSON.stringify(options.params));
   const fetchOptions: RequestInit = {
     method: options.method || 'GET',

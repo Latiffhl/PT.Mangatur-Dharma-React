@@ -16,7 +16,7 @@ const Penghargaan = () => {
     const fetchAwards = async () => {
       setLoading(true);
       try {
-        const data = await getListAwards(AppConfig.ApiDB);
+        const data = await getListAwards();
         setAwards(data);
       } catch (error) {
         console.error('Gagal memuat data penghargaan:', error);

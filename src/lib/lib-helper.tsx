@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const strSplit = (str: string, splitLength: number): string[] => {
   if (splitLength < 1) return [];
   str = str || '';

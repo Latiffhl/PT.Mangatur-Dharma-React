@@ -6,7 +6,7 @@ export async function getListPelanggan(apiDB: string): Promise<any[]> {
   const objParams = {
     params: {
       Method: 'LoadGrid',
-      Controller: 'PELANGGAN',
+      Controller: 'CMCSTM',
       ApiDB: apiDB,
     },
   };

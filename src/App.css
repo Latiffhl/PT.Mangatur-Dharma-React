@@ -17,6 +17,21 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Ubah nilai ini untuk mengatur seberapa jauh naik */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-updown {
+  animation: upDown 3s ease-in-out infinite; /* Ubah nilai 3s untuk kecepatan */
+}
 
 @keyframes logo-spin {
   from {

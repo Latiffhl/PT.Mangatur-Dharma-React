@@ -41,11 +41,11 @@ All colors MUST be HSL.
     --teal-light: 189 66% 89%;
     --teal-dark: 189 66% 29%;
     --orange-accent: 32 91% 58%;
-    
+
     /* Gradients */
     --gradient-teal: linear-gradient(135deg, hsl(var(--teal-primary)), hsl(var(--teal-dark)));
     --gradient-hero: linear-gradient(135deg, hsl(189 66% 39%) 0%, hsl(189 66% 49%) 100%);
-    
+
     /* Shadows */
     --shadow-card: 0 4px 20px -4px hsl(var(--teal-primary) / 0.15);
     --shadow-dropdown: 0 10px 40px -8px hsl(var(--teal-primary) / 0.25);
@@ -116,4 +116,19 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px); /* Ubah nilai ini untuk mengatur seberapa jauh naik */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-leftright {
+  animation: leftRight 3s ease-in-out infinite; /* Ubah nilai 3s untuk kecepatan */
 }

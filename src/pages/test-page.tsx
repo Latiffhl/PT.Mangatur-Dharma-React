@@ -7,33 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import heroImage1 from '../assets/md1.png';
 import heroImage2 from '../assets/md2.png';
 import heroImage3 from '../assets/md3.png';
-
-const PrevArrow = ({ onClick }) => (
-  <div
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer 
-               bg-gray-800 bg-opacity-50 text-white rounded-full p-2 
-               hover:bg-opacity-75 transition-all"
-    onClick={onClick}
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-    </svg>
-  </div>
-);
-
-const NextArrow = ({ onClick }) => (
-  <div
-    className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer 
-               bg-gray-800 bg-opacity-50 text-white rounded-full p-2 
-               hover:bg-opacity-75 transition-all"
-    onClick={onClick}
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-    </svg>
-  </div>
-);
-
+import { PrevArrow, NextArrow } from '@/components/CustomArrows';
 const settings = {
   dots: true,
   infinite: true,
@@ -42,9 +16,31 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const Test = () => {

@@ -1,6 +1,6 @@
 import { fetchingApi } from './catalog-api';
 import { AppConfig } from './config';
-import { EventDataRow, ResponseEventData } from '../types/events.types';
+import { EventDataRow, ResponseEventData } from '@/types/events.types';
 
 export async function getListEvents(page = 1, limit = 8, category = ''): Promise<{ list: EventDataRow[]; totalRows: number }> {
   let sqlCondition = '';

@@ -15,6 +15,7 @@ import Artikel from './pages/news/Artikel';
 import DaftarPelanggan from './pages/news/DaftarPelanggan';
 import OurCategory from './pages/our-category';
 import Test from './pages/test-page';
+import HVAC from './pages/produk/hvac';
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/artikel" element={<Artikel />} />
           <Route path="/daftar-pelanggan" element={<DaftarPelanggan />} />
           <Route path="/test-page" element={<Test />} />
+          <Route path="/hvac" element={<HVAC />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
